@@ -1,59 +1,101 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Products</title>
   <link href="./style.css" rel="stylesheet">
- <script src="https://kit.fontawesome.com/0383e5836c.js" crossorigin="anonymous"></script>
-   
+  <script src="https://kit.fontawesome.com/0383e5836c.js" crossorigin="anonymous"></script>
+
 </head>
-<body class="bg-gray-900 text-white text-center">
 
- <!-- products -->
-<header class="header flex justify-between items-center p-4 bg-gray-800 text-white mb-8"> 
+<body class="bg-gray-50 text-gray-600 text-center">
 
-
-  <div class="logo">
-    <img src="./logo.png" alt="Logo brand" class="h-8">
-  </div>
-
- <!-- Navigation -->
-  <nav>
-    <ul class="flex space-x-4"> 
-      <li><a class=" hover:underline decoration-fuchsia-300 duration-150 visited:underline" href="#">Home</a></li>
-      <li><a  class=" hover:underline decoration-fuchsia-300 duration-150 visited:underline"  href="./products.html">Products</a></li>
-      <li><a  class=" hover:underline decoration-fuchsia-300 duration-150 visited:underline" href="./about.html">About</a></li>
-      <li><a  class=" hover:underline decoration-fuchsia-300 duration-150 visited:underline" href="./contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  <!-- icon header -->
-  <div class="icons flex space-x-4">
-    <a href="#" class="text-white hover:text-gray-400" ><i class="fas fa-search"></i></a>
-    <a href="#" class="text-white hover:text-gray-400"><i class="fas fa-shopping-cart"></i></a>
-    <a href="#" class="text-white hover:text-gray-400"><i class="fas fa-user"></i></a>
-  </div>
-</header>
-
-    <!-- hero slider -->
-<main class="">
-<section class="hero  bg-[url('../images/hero1.jpg')] h-96 bg-center bg-cover ">
-  <div class="heroContent bg-black opacity-50 h-full flex flex-col justify-center items-start p-9 text-gray-400">
-    <h1 class="font-extrabold pb-4">welcome in owr </h1>
-    <p class="pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <button class="bg-amber-600 py-2 px-6 rounded-full ">More</button>
-  </div>
-
-</section>
-
- 
+  <!-- products -->
+  <header class="header text-gray-700 flex justify-between items-center p-4 bg-white shadow-sm  mb-8">
 
 
+    <div class="logo">
+      <img src="./logo.png" alt="Logo brand" class="h-8">
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+      <ul class="flex space-x-4">
+        <li><a class=" hover:underline decoration-fuchsia-300 duration-150 visited:underline" href="#">Home</a></li>
+        <li><a class=" hover:underline decoration-fuchsia-300 duration-150 visited:underline"
+            href="./products.html">Products</a></li>
+        <li><a class=" hover:underline decoration-fuchsia-300 duration-150 visited:underline"
+            href="./about.html">About</a></li>
+        <li><a class=" hover:underline decoration-fuchsia-300 duration-150 visited:underline"
+            href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- icon header -->
+    <div class="icons flex space-x-4">
+      <a href="#" class=" hover:text-gray-400"><i class="text-gray-700 fas fa-shopping-cart"></i></a>
+      <a href="#" class="text-gray-700 hover:text-gray-400"><i class="fas fa-search"></i></a>
+      <a href="#" class="text-gray-700 hover:text-gray-400"><i class="fas fa-user"></i></a>
+    </div>
+  </header>
+
+  <!-- hero slider -->
+  <main class="">
+    <section class="hero bg-cover bg-center h-screen relative"
+      style="background-image: url('../images/pexels-ron-lach-8262595.jpg');">
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <div class="container mx-auto flex items-center justify-center h-full relative z-10">
+        <div class=" text-white">
+          <h1 class="text-5xl font-bold mb-4">Welcome to Our Products</h1>
+          <p class="text-lg mb-8">Discover the best products tailored for you</p>
+          <a href="./products.html"
+            class="bg-gray-800 hover:bg-gray-900 border border-gray-400  font-bold py-2 px-4 rounded-4xl">Shop Now</a>
+        </div>
+
+
+      </div>
+      <!-- icon slider  -->
+      <div class="w-full  ">
+        <i class="fas fa-chevron-left absolute cursor-pointer left-4 top-1/2"></i>
+
+        <i class="fas fa-chevron-right cursor-pointer  absolute right-4 top-1/2 hover: "></i>
+
+
+      </div>
+    </section>
+    <!-- end hero -->
+
+    <div class="container mx-auto mt-8 p-4">
+      <section class="ProductsCard bg-white p-4 shadow-md rounded-lg border border-gray-200">
+        <h2 class="mb-6 font-bold text-4xl"> Feature Products</h2>
+        <div class="cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div class="card bg-gray-100 p-4 rounded-">
+            <img src="../images/pexels-holfotos-3115525.jpg" alt="product1 image" cl>
+            <div class="contentCard">
+              <p class="productTitle mb-4">Product1</p>
+              <p class="productDescription mb-4"> Lorem ipsum dolor sit amet.</p>
+
+              <p class="productPrice mb-6">$19.99</p>
+              <button
+                class="bg-gray-800 hover:bg-gray-900 cursor-pointer py-2 px-4 rounded-4xl  font-bold   ">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        
+       
+
+        </div>
+      </section>
+
+    </div>
 
 
 
 
-</main>
+
+  </main>
 
 </body>
 
