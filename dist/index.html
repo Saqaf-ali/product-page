@@ -195,11 +195,12 @@
   <!-- Model -->
 
       </section>
-    <div class="container p-4 mx-auto model h-[80vh] fixed scale-3d top-1/2 -translate-[50%] bottom-0 left-1/2  z-40 w-full bg-red-700">
- <div class=" card bg-gray-800 p-4 rounded-lg shadow-lg h-full flex ">
-<!-- model icon -->
- <i class="fa-solid fa-circle-xmark"></i>
+    <div id="modelCard" class=" containerp-2 p-4 mx-auto model h-[80vh] fixed scale-3d top-1/2 -translate-[50%] bottom-0 left-1/2  z-40 w-full bg-gray-600 ">
+ <i id="modelExit" class="modelExit fa-solid fa-circle-xmark absolute top-2 right-2 text-2xl font-bold cursor-pointer" title="Exit"></i>
 
+      <div class=" card bg-gray-700 p-4 rounded-lg shadow-lg h-full flex ">
+
+ 
 
 
 
@@ -233,11 +234,57 @@
     </div>
 
 
-    <!-- slider cards -->
+ 
+    
      
 
 
   </main>
+<div class="relative w-full max-w-4xl mx-auto overflow-hidden">
+  <!-- Slider container -->
+  <div id="slider" class="flex transition-transform duration-700 ease-in-out">
+    <div class="min-w-full p-4">
+      <div class="bg-white rounded-lg shadow-md p-6 text-center">Card 1</div>
+    </div>
+    <div class="min-w-full p-4">
+      <div class="bg-white rounded-lg shadow-md p-6 text-center">Card 2</div>
+    </div>
+    <div class="min-w-full p-4">
+      <div class="bg-white rounded-lg shadow-md p-6 text-center">Card 3</div>
+    </div>
+  </div>
+
+  <!-- Navigation buttons -->
+  <div class="absolute top-1/2 left-0 transform -translate-y-1/2">
+    <button onclick="prevSlide()" class="bg-gray-800 text-white px-3 py-2 rounded-l">◀</button>
+  </div>
+  <div class="absolute top-1/2 right-0 transform -translate-y-1/2">
+    <button onclick="nextSlide()" class="bg-gray-800 text-white px-3 py-2 rounded-r">▶</button>
+  </div>
+</div>
+
+<script>
+  let currentIndex = 0;
+  const slider = document.getElementById('slider');
+  const totalSlides = slider.children.length;
+
+  function updateSlide() {
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateSlide();
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    updateSlide();
+  }
+
+  // Auto-slide every 3 seconds
+  setInterval(nextSlide, 3000);
+</script>
 
 </body>
 
