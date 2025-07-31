@@ -6,23 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Products</title>
   <link href="./style.css" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
   <script src="https://kit.fontawesome.com/0383e5836c.js" crossorigin="anonymous"></script>
 
 </head>
 
-<body class="bg-gray-50 text-gray-600 text-center">
+<body class="bg-gray-300 text-white text-center">
 
   <!-- products -->
-  <header class="header text-gray-700 flex justify-between items-center p-4 bg-white shadow-sm  mb-8">
-
-
-    <div class="logo">
-      <img src="./logo.png" alt="Logo brand" class="h-8">
+  <header class="header   bg-gray-900  text-white border-b border-fuchsia-200 shadow-lg lg:p-4 ">
+    <div class="container  flex  flex-col lg:flex-row lg:justify-between items-center p-4 mx-auto lg:py-8">
+    <div class="logo w-full lg:w-auto flex mb-8 lg:mb-auto">
+      <img src="./logo.png" alt="" class="h-8">
+      <span>logo</span>
     </div>
-
-    <!-- Navigation -->
-    <nav>
-      <ul class="flex space-x-4">
+    <nav class="w-full lg:w-auto ">
+      <ul class="flex justify-between items-center lg:justify-normal lg:space-x-4  mb-8 lg:mb-auto"> 
         <li><a class=" hover:underline decoration-fuchsia-300 duration-150 visited:underline" href="#">Home</a></li>
         <li><a class=" hover:underline decoration-fuchsia-300 duration-150 visited:underline"
             href="./products.html">Products</a></li>
@@ -33,63 +32,82 @@
       </ul>
     </nav>
     <!-- icon header -->
-    <div class="icons flex space-x-4">
-      <a href="#" class=" hover:text-gray-400"><i class="text-gray-700 fas fa-shopping-cart"></i></a>
-      <a href="#" class="text-gray-700 hover:text-gray-400"><i class="fas fa-search"></i></a>
-      <a href="#" class="text-gray-700 hover:text-gray-400"><i class="fas fa-user"></i></a>
+    <div class="icons flex w-full justify-between lg:w-auto lg:justify-normal lg:space-x-4 ">
+      <a href="#" class="text-white hover:text-gray-400"><i class="fas fa-search"></i></a>
+      <a href="#" class="text-white hover:text-gray-400"><i class="fas fa-shopping-cart"></i></a>
+      <a href="#" class="text-white hover:text-gray-400"><i class="fas fa-user"></i></a>
+            <a href="#" class="text-white hover:text-gray-400"><i class="fas fa-shopping-cart"></i></a>
+
+
+   </div>
     </div>
   </header>
 
   <!-- hero slider -->
   <main class="">
-    <section class="hero bg-cover bg-center h-screen relative"
+    <section class="hero bg-cover bg-center md:bg-left h-screen relative  p-4 mx-auto"
       style="background-image: url('../images/pexels-ron-lach-8262595.jpg');">
       <div class="absolute inset-0 bg-black opacity-50"></div>
-      <div class="container mx-auto flex items-center justify-center h-full relative z-10">
+      <div class="container mx-auto flex items-center justify-start h-full  relative z-10 p-4">
         <div class=" text-white">
-          <h1 class="text-5xl font-bold mb-4">Welcome to Our Products</h1>
-          <p class="text-lg mb-8">Discover the best products tailored for you</p>
+          <h1 class="text-2xl font-bold mb-4">Welcome to Our Products</h1>
+          <p class="text-lg mb-8 font-bold ">Discover the best products tailored for you</p>
           <a href="./products.html"
-            class="bg-gray-800 hover:bg-gray-900 border border-gray-400  font-bold py-2 px-4 rounded-4xl">Shop Now</a>
+            class="bg-fuchsia-500 hover:bg-fuchsia-600 border border-gray-400  font-bold py-2 px-4 rounded-4xl">Shop
+            Now</a>
         </div>
-
-
       </div>
       <!-- icon slider  -->
       <div class="w-full  ">
         <i class="fas fa-chevron-left absolute cursor-pointer left-4 top-1/2"></i>
-
         <i class="fas fa-chevron-right cursor-pointer  absolute right-4 top-1/2 hover: "></i>
-
-
       </div>
     </section>
-    <!-- end hero -->
+    <!-- END HERO -->
 
-    <div class="container mx-auto mt-8 p-4">
-      <section class="ProductsCard bg-white p-4 shadow-md rounded-lg border border-gray-200">
-        <h2 class="mb-6 font-bold text-4xl"> Feature Products</h2>
-        <div class="cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          <div class="card bg-gray-100 p-4 rounded-">
-            <img src="../images/pexels-holfotos-3115525.jpg" alt="product1 image" cl>
-            <div class="contentCard">
-              <p class="productTitle mb-4">Product1</p>
-              <p class="productDescription mb-4"> Lorem ipsum dolor sit amet.</p>
+    
+      <section class="ProductsCard bg-gray-700  mt-8">
+        <div class="container mx-auto relative p-4 px-8">
+            <!-- icon slider  -->
+      <div class="w-full  ">
+        <i class="fas fa-chevron-left absolute cursor-pointer left-1 top-1/2"></i>
+        <i class="fas fa-chevron-right cursor-pointer  absolute right-1 top-1/2 hover: "></i>
+      </div>
+        <h2 class=" font-bold mb-4 ">Featured Products</h2>
+        <!-- <div class="slider"> -->
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 h-auto   ">
 
-              <p class="productPrice mb-6">$19.99</p>
-              <button
-                class="bg-gray-800 hover:bg-gray-900 cursor-pointer py-2 px-4 rounded-4xl  font-bold   ">
-                <i class="fas fa-shopping-cart"></i> Add to Cart
-              </button>
+          <!-- Product Card -->
+          <div class=" card bg-gray-800 p-4 rounded-lg shadow-lg  ">
+            <img src="../images/img6.jpg" alt="Product 1" class="w-full h-48 object-cover mb-4 rounded-lg">
+            <p class="text-xl font-semibold mb-2">Product 1</p>
+            <p class="text-gray-400 mb-4">Lorem ipsum dolor
+            </p>
+            <span class="text-white font-bold">$29.99</span>
+            <!-- star icons -->
+            <div class="flex justify-center mt-2">
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-gray-400"></i>
             </div>
+            <button
+              class="bg-fuchsia-500 hover:bg-fuchsia-600 text-white font-bold py-2 px-4 rounded-3xl mt-4 w-full transition duration-150">
+              <i class="fas fa-cart-plus mr-2"></i>
+              Add to
+              Cart
+            </button>
           </div>
-        
-       
 
         </div>
+      
+        <!-- </div> -->
+
+  </div>
       </section>
 
-    </div>
+    
 
 
 
