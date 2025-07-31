@@ -16,30 +16,30 @@
   <!-- products -->
   <header class="header   bg-gray-900  text-white border-b border-fuchsia-200 shadow-lg lg:p-4 ">
     <div class="container  flex  flex-col lg:flex-row lg:justify-between items-center p-4 mx-auto lg:py-8">
-    <div class="logo w-full lg:w-auto flex mb-8 lg:mb-auto">
-      <img src="./logo.png" alt="" class="h-8">
-      <span>logo</span>
-    </div>
-    <nav class="w-full lg:w-auto ">
-      <ul class="flex justify-between items-center lg:justify-normal lg:space-x-4  mb-8 lg:mb-auto"> 
-        <li><a class=" hover:underline decoration-fuchsia-300 duration-150 visited:underline" href="#">Home</a></li>
-        <li><a class=" hover:underline decoration-fuchsia-300 duration-150 visited:underline"
-            href="./products.html">Products</a></li>
-        <li><a class=" hover:underline decoration-fuchsia-300 duration-150 visited:underline"
-            href="./about.html">About</a></li>
-        <li><a class=" hover:underline decoration-fuchsia-300 duration-150 visited:underline"
-            href="./contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <!-- icon header -->
-    <div class="icons flex w-full justify-between lg:w-auto lg:justify-normal lg:space-x-4 ">
-      <a href="#" class="text-white hover:text-gray-400"><i class="fas fa-search"></i></a>
-      <a href="#" class="text-white hover:text-gray-400"><i class="fas fa-shopping-cart"></i></a>
-      <a href="#" class="text-white hover:text-gray-400"><i class="fas fa-user"></i></a>
-            <a href="#" class="text-white hover:text-gray-400"><i class="fas fa-shopping-cart"></i></a>
+      <div class="logo w-full lg:w-auto flex mb-8 lg:mb-auto">
+        <img src="./logo.png" alt="" class="h-8">
+        <span>logo</span>
+      </div>
+      <nav class="w-full lg:w-auto ">
+        <ul class="flex justify-between items-center lg:justify-normal lg:space-x-4  mb-8 lg:mb-auto">
+          <li><a class=" hover:underline decoration-fuchsia-300 duration-150 visited:underline" href="#">Home</a></li>
+          <li><a class=" hover:underline decoration-fuchsia-300 duration-150 visited:underline"
+              href="./products.html">Products</a></li>
+          <li><a class=" hover:underline decoration-fuchsia-300 duration-150 visited:underline"
+              href="./about.html">About</a></li>
+          <li><a class=" hover:underline decoration-fuchsia-300 duration-150 visited:underline"
+              href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- icon header -->
+      <div class="icons flex w-full justify-between lg:w-auto lg:justify-normal lg:space-x-4 ">
+        <a href="#" class="text-white hover:text-gray-400"><i class="fas fa-search"></i></a>
+        <a href="#" class="text-white hover:text-gray-400"><i class="fas fa-shopping-cart"></i></a>
+        <a href="#" class="text-white hover:text-gray-400"><i class="fas fa-user"></i></a>
+        <a href="#" class="text-white hover:text-gray-400"><i class="fas fa-shopping-cart"></i></a>
 
 
-   </div>
+      </div>
     </div>
   </header>
 
@@ -65,17 +65,61 @@
     </section>
     <!-- END HERO -->
 
-    
-      <section class="ProductsCard bg-gray-700  mt-8">
-        <div class="container mx-auto relative p-4 ">
-            <!-- icon slider  -->
-      <div class="w-full ">
-        <i class="fas fa-chevron-left absolute cursor-pointer left-1 top-1/2 shadow-2xs"></i>
-        <i class="fas fa-chevron-right cursor-pointer  absolute right-1 top-1/2 hover: "></i>
+
+  
+    <div id="modelCard"
+      class=" containerp-2 hidden p-4 mx-auto model h-[80vh] fixed scale-3d top-1/2 -translate-[50%] bottom-0 left-1/2  z-40 w-full bg-gray-600 ">
+      <i id="modelExit"
+        class="modelExit fa-solid fa-circle-xmark absolute top-2 right-2 text-2xl font-bold cursor-pointer"
+        title="Exit"></i>
+
+      <div class=" card bg-gray-700 p-4 rounded-lg shadow-lg h-full flex ">
+
+        <img src="../images/img6.jpg" alt="Product 1" class="w-1/2 max-h-full object-cover mb-4 rounded-lg">
+        <div class="content flex flex-col justify-between items-center container p-4">
+          <div class="flex flex-col items-center justify-end">
+            <p class="text-xl font-semibold text-start">Product 1</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolorem accusamus sequi numquam dignissimos
+              facere molestias officia ratione in libero?</p>
+          </div>
+          <p class="text-gray-400 ">Lorem ipsum dolor
+          </p>
+          <span class="text-white font-bold">$29.99</span>
+          <!-- star icons -->
+          <div class="flex justify-center mt-2">
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-gray-400"></i>
+          </div>
+          <button
+            class="bg-fuchsia-500 hover:bg-fuchsia-600 text-white font-bold py-2 px-4 rounded-3xl  w-full transition duration-150">
+            <i class="fas fa-cart-plus mr-2"></i>
+            Add to Cart
+          </button id="btnMore">
+        </div>
       </div>
+    </div>
+  </main>
+
+  
+  <div class="relative w-full  mx-auto overflow-hidden">
+    <!-- Slider container -->
+    <div id="slider" class="flex transition-transform duration-700 ease-in-out">
+      <div class="min-w-full p-4">
+        <div class="">
+          
+          <section class="ProductsCard bg-gray-700  mt-8">
+      <div class="container mx-auto relative p-4 ">
+        <!-- icon slider  -->
+        <div class="w-full ">
+          <i class="fas fa-chevron-left absolute cursor-pointer left-1 top-1/2 shadow-2xs"></i>
+          <i class="fas fa-chevron-right cursor-pointer  absolute right-1 top-1/2 hover: "></i>
+        </div>
         <h2 class=" font-bold mb-4 ">Featured Products</h2>
         <!-- <div class="slider"> -->
-   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 h-auto p-4  ">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 h-auto p-4  ">
 
           <!-- Product Card -->
           <div class=" card bg-gray-800 p-4 rounded-lg shadow-lg  ">
@@ -95,8 +139,8 @@
             <button id="btnMore1"
               class="bg-fuchsia-500 hover:bg-fuchsia-600 text-white font-bold py-2 px-4 rounded-3xl mt-4 w-full transition duration-150">
               <i class="fas fa-cart-plus mr-2"></i>
-             More
-            </button >
+              More
+            </button>
           </div>
 
           <!-- Product Card -->
@@ -117,44 +161,38 @@
             <button id="btnMore2"
               class="bg-fuchsia-500 hover:bg-fuchsia-600 text-white font-bold py-2 px-4 rounded-3xl mt-4 w-full transition duration-150">
               <i class="fas fa-cart-plus mr-2"></i>
-             More
-            </button >
+              More
+            </button>
           </div>
 
-          <!-- Product Card -->
-        
-
-        
-
-       
-
         </div>
-      
+
         <!-- </div> -->
- 
+
+      </div>
+      <!-- Model -->
+
+    </section>
   </div>
-  <!-- Model -->
+      </div>
+      <div class="min-w-full p-4">
+        <div class="">   
+          <section class="ProductsCard bg-gray-700  mt-8">
+      <div class="container mx-auto relative p-4 ">
+        <!-- icon slider  -->
+        <div class="w-full ">
+          <i class="fas fa-chevron-left absolute cursor-pointer left-1 top-1/2 shadow-2xs"></i>
+          <i class="fas fa-chevron-right cursor-pointer  absolute right-1 top-1/2 hover: "></i>
+        </div>
+        <h2 class=" font-bold mb-4 ">Featured Products</h2>
+        <!-- <div class="slider"> -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 h-auto p-4  ">
 
-      </section>
-    <div id="modelCard" class=" containerp-2 hidden p-4 mx-auto model h-[80vh] fixed scale-3d top-1/2 -translate-[50%] bottom-0 left-1/2  z-40 w-full bg-gray-600 ">
- <i id="modelExit" class="modelExit fa-solid fa-circle-xmark absolute top-2 right-2 text-2xl font-bold cursor-pointer" title="Exit"></i>
-
-      <div class=" card bg-gray-700 p-4 rounded-lg shadow-lg h-full flex ">
-
- 
-
-
-
-
-
-  <img src="../images/img6.jpg" alt="Product 1" class="w-1/2 max-h-full object-cover mb-4 rounded-lg">
-           <div class="content flex flex-col justify-between items-center container p-4">
-            <div class="flex flex-col items-center justify-end">
-               <p class="text-xl font-semibold text-start">Product 1</p>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolorem accusamus sequi numquam dignissimos facere molestias officia ratione in libero?</p>
-            </div>
-
-            <p class="text-gray-400 ">Lorem ipsum dolor
+          <!-- Product Card -->
+          <div class=" card bg-gray-800 p-4 rounded-lg shadow-lg  ">
+            <img src="../images/img6.jpg" alt="Product 1" class="w-full h-48 object-cover mb-4 rounded-lg">
+            <p class="text-xl font-semibold mb-2">Product 1</p>
+            <p class="text-gray-400 mb-4">Lorem ipsum dolor
             </p>
             <span class="text-white font-bold">$29.99</span>
             <!-- star icons -->
@@ -165,73 +203,152 @@
               <i class="fas fa-star text-yellow-400"></i>
               <i class="fas fa-star text-gray-400"></i>
             </div>
-            <button 
-              class="bg-fuchsia-500 hover:bg-fuchsia-600 text-white font-bold py-2 px-4 rounded-3xl  w-full transition duration-150">
+            <button id="btnMore1"
+              class="bg-fuchsia-500 hover:bg-fuchsia-600 text-white font-bold py-2 px-4 rounded-3xl mt-4 w-full transition duration-150">
               <i class="fas fa-cart-plus mr-2"></i>
-                      Add to Cart
-            </button id="btnMore">
-           </div>
+              More
+            </button>
           </div>
+
+          <!-- Product Card -->
+          <div class=" card bg-gray-800 p-4 rounded-lg shadow-lg  ">
+            <img src="../images/img6.jpg" alt="Product 1" class="w-full h-48 object-cover mb-4 rounded-lg">
+            <p class="text-xl font-semibold mb-2">Product 1</p>
+            <p class="text-gray-400 mb-4">Lorem ipsum dolor
+            </p>
+            <span class="text-white font-bold">$29.99</span>
+            <!-- star icons -->
+            <div class="flex justify-center mt-2">
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-gray-400"></i>
+            </div>
+            <button id="btnMore2"
+              class="bg-fuchsia-500 hover:bg-fuchsia-600 text-white font-bold py-2 px-4 rounded-3xl mt-4 w-full transition duration-150">
+              <i class="fas fa-cart-plus mr-2"></i>
+              More
+            </button>
+          </div>
+
+        </div>
+
+        <!-- </div> -->
+
+      </div>
+      <!-- Model -->
+
+    </section></div>
+      </div>
+      <div class="min-w-full p-4">
+        <div class=" bg-gray-700 rounded-lg shadow-md p-6 text-center">
+          <section class="ProductsCard bg-gray-700  mt-8">
+      <div class="container mx-auto relative p-4 ">
+        <!-- icon slider  -->
+        <div class="w-full ">
+          <i class="fas fa-chevron-left absolute cursor-pointer left-1 top-1/2 shadow-2xs"></i>
+          <i class="fas fa-chevron-right cursor-pointer  absolute right-1 top-1/2 hover: "></i>
+        </div>
+        <h2 class=" font-bold mb-4 ">Featured Products</h2>
+        <!-- <div class="slider"> -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 h-auto p-4  ">
+
+          <!-- Product Card -->
+          <div class=" card bg-gray-800 p-4 rounded-lg shadow-lg  ">
+            <img src="../images/img6.jpg" alt="Product 1" class="w-full h-48 object-cover mb-4 rounded-lg">
+            <p class="text-xl font-semibold mb-2">Product 1</p>
+            <p class="text-gray-400 mb-4">Lorem ipsum dolor
+            </p>
+            <span class="text-white font-bold">$29.99</span>
+            <!-- star icons -->
+            <div class="flex justify-center mt-2">
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-gray-400"></i>
+            </div>
+            <button id="btnMore1"
+              class="bg-fuchsia-500 hover:bg-fuchsia-600 text-white font-bold py-2 px-4 rounded-3xl mt-4 w-full transition duration-150">
+              <i class="fas fa-cart-plus mr-2"></i>
+              More
+            </button>
+          </div>
+
+          <!-- Product Card -->
+          <div class=" card bg-gray-800 p-4 rounded-lg shadow-lg  ">
+            <img src="../images/img6.jpg" alt="Product 1" class="w-full h-48 object-cover mb-4 rounded-lg">
+            <p class="text-xl font-semibold mb-2">Product 1</p>
+            <p class="text-gray-400 mb-4">Lorem ipsum dolor
+            </p>
+            <span class="text-white font-bold">$29.99</span>
+            <!-- star icons -->
+            <div class="flex justify-center mt-2">
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-gray-400"></i>
+            </div>
+            <button id="btnMore2"
+              class="bg-fuchsia-500 hover:bg-fuchsia-600 text-white font-bold py-2 px-4 rounded-3xl mt-4 w-full transition duration-150">
+              <i class="fas fa-cart-plus mr-2"></i>
+              More
+            </button>
+          </div>
+
+        </div>
+
+        <!-- </div> -->
+
+      </div>
+      <!-- Model -->
+
+    </section>
+  </div>
+      </div>
     </div>
 
-
- 
-    
-     
-
-
-  </main>
-<div class="relative w-full max-w-4xl mx-auto overflow-hidden">
-  <!-- Slider container -->
-  <div id="slider" class="flex transition-transform duration-700 ease-in-out">
-    <div class="min-w-full p-4">
-      <div class="bg-white rounded-lg shadow-md p-6 text-center">Card 1</div>
+    <!-- Navigation button id="btnMore"s -->
+    <div class="absolute top-1/2 left-0 transform -translate-y-1/2">
+      <button id="btnMore" onclick="prevSlide()" class="bg-gray-800 text-white px-3 py-2 rounded-l"><i class="fas fa-chevron-left"></i></button
+        id="btnMore">
     </div>
-    <div class="min-w-full p-4">
-      <div class="bg-white rounded-lg shadow-md p-6 text-center">Card 2</div>
-    </div>
-    <div class="min-w-full p-4">
-      <div class="bg-white rounded-lg shadow-md p-6 text-center">Card 3</div>
+    <div class="absolute top-1/2 right-0 transform -translate-y-1/2">
+      <button id="btnMore" onclick="nextSlide()" class="bg-gray-800 text-white px-3 py-2 rounded-r"><i class="fas fa-chevron-right"></i></button
+        id="btnMore">
     </div>
   </div>
 
-  <!-- Navigation button id="btnMore"s -->
-  <div class="absolute top-1/2 left-0 transform -translate-y-1/2">
-    <button id="btnMore" onclick="prevSlide()" class="bg-gray-800 text-white px-3 py-2 rounded-l">◀</button id="btnMore">
-  </div>
-  <div class="absolute top-1/2 right-0 transform -translate-y-1/2">
-    <button id="btnMore" onclick="nextSlide()" class="bg-gray-800 text-white px-3 py-2 rounded-r">▶</button id="btnMore">
-  </div>
-</div>
+  <script>
+    let currentIndex = 0;
+    const slider = document.getElementById('slider');
+    const totalSlides = slider.children.length;
 
-<script>
-  let currentIndex = 0;
-  const slider = document.getElementById('slider');
-  const totalSlides = slider.children.length;
+    function updateSlide() {
+      slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
 
-  function updateSlide() {
-    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-  }
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateSlide();
+    }
 
-  function nextSlide() {
-    currentIndex = (currentIndex + 1) % totalSlides;
-    updateSlide();
-  }
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      updateSlide();
+    }
 
-  function prevSlide() {
-    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-    updateSlide();
-  }
-
-  // Auto-slide every 3 seconds
-  setInterval(nextSlide, 3000);
-</script>
+    // Auto-slide every 3 seconds
+    setInterval(nextSlide, 3000);
+  </script>
 
 
 
 
 
-<script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
